@@ -412,6 +412,19 @@ body {
     margin-bottom: var(--spacing-lg);
 }
 
+.section-bible {
+    font-family: var;
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-lg);
+}
+.section-bibles {
+    font-family: var;
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    
+}
+
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
