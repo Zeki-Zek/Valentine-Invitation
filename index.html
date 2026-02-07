@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine? 💖</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Music Player -->
+    <div class="music-controls">
+        <button id="musicToggle" class="music-btn">
+            <span id="musicIcon">🔇</span>
+            <span id="musicText">Play Music</span>
+        </button>
+        <div id="musicName" class="music-name">♪ I've Found That Spark - Kyle Patrick Naval</div>
+    </div>
+
+    <!-- Floating Hearts Background -->
+    <div class="floating-hearts" id="floatingHearts"></div>
+
+    <!-- Section 1: Landing Page -->
+    <section id="landing" class="section active">
+        <div class="container">
+            <div class="heart-pulse">💝</div>
+            <h1 class="main-title fade-in">Will You Be My Valentine?</h1>
+            <p class="subtitle fade-in-delay">I have something special to ask you...</p>
+            <button class="btn-primary pulse" onclick="showSection('question')">
+                Open My Heart 💌
+            </button>
+        </div>
+    </section>
+
+    <!-- Section 2: The Question -->
+    <section id="question" class="section">
+        <div class="container">
+            <div class="question-box">
+                <h2 class="question-text">Will You Be My Valentine?</h2>
+                <img src="download.png" alt="Valentine's Image" width="250" style="position:relative; top: -60px;">
+
+                <div class="buttons-container" style="position: relative; top: -50px;">
+                    <button id="yesBtn" class="btn-yes" onclick="handleYes()">
+                        Yes 💖
+                    </button>
+                    <button id="noBtn" class="btn-no" onmouseover="avoidNo()" onclick="avoidNo()">
+                        No 🙈
+                    </button>
+                </div>
+                <p id="noMessage" class="no-message"></p>
+            </div>
+            <div class="navigation-links">
+                <a href="#" onclick="showSection('letter-valentine')">💌 <b> My Valentine Letter</b></a>
+                <a href="#" onclick="showSection('letter-honor')">🎓 <b>Congratulations Letter</b></a>
+                <a href="#" onclick="showSection('memories')">📸 <b>Our Memories</b></a>
+                <a href="#" onclick="showSection('playlist')">🎧 <b>Our Playlist</b></a>
+                <a href="#" onclick="showSection('game')">🎮 <b>Play a Game</b></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Valentine Love Letter -->
+    <section id="letter-valentine" class="section">
+        <div class="container">
+            <div class="letter-container">
+                <div class="letter-header">
+                    <h2>My Valentine Letter 💌</h2>
+                </div>
+                <div class="letter-content">
+                    <!-- 
+                    CUSTOMIZATION: Edit your Valentine love letter here!
+                    You can write as many paragraphs as you want.
+                    -->
+                    <p>My Dearest Madeline,</p>
+                    
+                    <p>From the moment I met you, my world has been painted in the most beautiful colors, especially blue. The time I spend with you feels like a dream I never want to wake up from.</p>
+                    
+                    <p>You are the light that brightens my darkest days, the smile that makes my heart skip a beat, and the warmth that makes every moment feel like home. Your laughter is my favorite melody, and your happiness is my greatest wish.</p>
+                    
+                    <p>When I think about what makes you so special, I realize it's everything. The way you care for others, your beautiful smile, the kindness in your heart, and the way you make even ordinary moments feel extraordinary. You've taught me what it means to truly love someone.</p>
+                    
+                    <p>Every moment we share becomes a treasured memory. From our quiet conversations to our adventures together, each one has woven itself into the fabric of my heart. I cherish every laugh we've shared, every conversations we've had, and every fights we've had that continue to strengthen us together.</p>
+                    
+                    <p>I've prepared this little corner of the internet to ask you something that's been dancing in my heart... Will you be my Valentine? Not just for a day, but as a celebration of what we share and the beautiful journey we're on together.</p>
+                    
+                    <p>With all my love and more,<br>
+                    <span class="signature">Your Forever Admirer</span></p>
+                    <img src="signature.png" alt="Valentine's Image" width="400" style="position:relative; left: -100px;">
+                </div>
+                <button class="btn-secondary" onclick="showSection('question')">
+                    Back to Question 💝
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Honor Student Congratulations Letter -->
+    <section id="letter-honor" class="section">
+        <div class="container">
+            <div class="letter-container letter-honor">
+                <div class="letter-header">
+                    <h2>Congratulations, My Star! 🎓✨</h2>
+                </div>
+                <div class="letter-content">
+                    <!-- 
+                    CUSTOMIZATION: Edit your congratulations letter here!
+                    Celebrate her achievement as an honor student!
+                    -->
+                    <p>To My Brilliant Love,</p>
+                    
+                    <p>I am bursting with pride and joy as I write this! Congratulations on becoming an honor student!  This incredible achievement is a testament to your dedication, intelligence, and unwavering commitment to excellence.</p>
+                    
+                    <p>I've watched you work tirelessly, staying up late to study, pushing through challenges, and never giving up even when things got tough. Your determination inspires me every single day. It's a reflection of who you are: brilliant, hardworking, and absolutely amazing.</p>
+                    
+                    <p>Your success doesn't surprise me one bit because I've always known how capable and talented you are. What amazes me is how you stay humble and kind through it all.</p>
+                    
+                    <p>This is just the beginning of all the wonderful things you're going to achieve. Your intelligence, coupled with your beautiful heart, makes you unstoppable. I'm so lucky to witness your journey and cheer you on every step of the way.</p>
+                    
+                    <p>As you celebrate, know that I'm celebrating YOU – not just your achievements, but the incredible person you are. You make me proud every single day, and I'm so honored to be by your side as you reach for the stars.</p>
+                    
+                    <p>Just a reminder before I close this letter. Take each step with patience, determination, and complete trust in God.</p>
+                    <p>Here's to you, my brilliant star. Keep shining! </p>
+                    
+                    <p>With immense pride and endless love,<br>
+                    <span class="signature">Your Biggest Fan </span></p>
+                    <img src="signature.png" alt="Valentine's Image" width="400" style="position:relative; left: -100px;">
+
+                </div>
+                <button class="btn-secondary" onclick="showSection('question')">
+                    Back to Question 💝
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Memories Gallery -->
+    <section id="memories" class="section">
+        <div class="container">
+            <h2 class="section-title">Our Beautiful Memories 💕</h2>
+            <div class="gallery">
+                <!-- 
+                CUSTOMIZATION: Replace these placeholder images with your own photos!
+                Simply replace the src URLs with your image file paths or URLs.
+                You can add or remove gallery items as needed.
+                -->
+                <div class="gallery-item">
+                    <img src="1.jpeg" alt="Memory 1" onclick="openLightbox(this)">
+                    <p class="caption">The first time we went to the cinema</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="2.jpeg" alt="Memory 2" onclick="openLightbox(this)">
+                    <p class="caption">That sweet smile of yours while eating</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="3.jpeg" alt="Memory 3" onclick="openLightbox(this)">
+                    <p class="caption">When I decided to do a surprise visit</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="4.jpeg" alt="Memory 4" onclick="openLightbox(this)">
+                    <p class="caption">To celebrate a new year with you</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="5.jpeg" alt="Memory 5" onclick="openLightbox(this)">
+                    <p class="caption">You make every moment special</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="6.jpeg" alt="Memory 6" onclick="openLightbox(this)">
+                    <p class="caption">And many more to come...</p>
+                </div>
+            </div>
+            <button class="btn-secondary" onclick="showSection('question')">
+                Back to Question 💝
+            </button>
+        </div>
+    </section>
+
+    <!-- Section 6: Heart Catching Game -->
+    <section id="game" class="section">
+        <div class="container">
+            <div class="game-container">
+                <h2 class="section-title">Catch My Hearts! 💕</h2>
+                <p class="game-instructions">Use your mouse or finger to catch the falling hearts!</p>
+                
+                <div id="gameStart" class="game-start">
+                    <div class="game-preview">
+                        <div class="preview-heart">💖</div>
+                        <div class="preview-heart">💗</div>
+                        <div class="preview-heart">💝</div>
+                    </div>
+                    <button class="btn-primary" onclick="startGame()">
+                        ▶️ Start Game
+                    </button>
+                </div>
+
+                <div id="gameArea" class="game-area" style="display: none;">
+                    <div class="game-stats">
+                        <div class="score">Hearts Caught: <span id="score">0</span>/15</div>
+                        <div class="timer">Time: <span id="timer">30</span>s</div>
+                    </div>
+                    <canvas id="gameCanvas"></canvas>
+                </div>
+
+                <div id="gameEnd" class="game-end" style="display: none;">
+                    <div class="game-result">
+                        <h3 id="gameResultText"></h3>
+                        <p id="gameResultMessage"></p>
+                        <div class="game-final-question">
+                            <p class="game-question-text">Now that you've caught my hearts...<br>Will You Be My Valentine?</p>
+                            <button class="btn-yes" onclick="handleYes()">Yes! 💖</button>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn-secondary" onclick="showSection('question')" style="margin-top: 20px;">
+                    Back to Question 💝
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 7: Spotify Playlist -->
+<section id="playlist" class="section">
+    <div class="container">
+        <h2 class="section-title">Our Love Playlist 🎧💖</h2>
+        <p class="subtitle">
+            Every song here reminds me of you.  
+            Press play and think of us. 🌹
+        </p>
+
+        <div class="spotify-container">
+            <!-- 🔁 REPLACE THE SRC WITH YOUR OWN SPOTIFY PLAYLIST EMBED LINK -->
+            <iframe
+                style="border-radius:12px"
+                src="https://open.spotify.com/embed/playlist/7vbNPIHjclvQN1O1kRAXlC"
+                width="100%"
+                height="380"
+                frameBorder="0"
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy">
+            </iframe>
+        </div>
+
+        <button class="btn-secondary" onclick="showSection('question')" style="margin-top: 30px;">
+            Back to Question 💝
+        </button>
+    </div>
+</section>
+
+
+    <!-- Section 8: Celebration -->
+    <section id="celebration" class="section">
+        <div class="container">
+            <div class="celebration-container">
+                <div class="celebration-hearts">
+                    <div class="big-heart">💖</div>
+                </div>
+                <h1 class="celebration-title">You Just Made My Heart The Happiest! 💕</h1>
+                <p class="celebration-message">
+                    I'm over the moon! This Valentine's Day just became the most special one ever. 
+                    I can't wait to create endless beautiful memories with you! 🌹✨
+                </p>
+                <div class="celebration-animation">
+                    <div class="confetti" id="confetti"></div>
+                </div>
+                <p class="celebration-footer">Happy Valentine's Day, My Love! 💝</p>
+                <div class="celebration-buttons">
+                    <button class="btn-secondary" onclick="showSection('question')">
+                        ← Relive The Moment
+                    </button>
+                    <button class="btn-primary" onclick="showSection('letter-valentine')">
+                        Read Valentine Letter 💌
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Audio Elements -->
+    <!-- 
+    CUSTOMIZATION: Replace the audio file URL with your own music file
+    Supported formats: MP3, OGG, WAV
+    Place your audio file in the same folder and reference it like: "your-song.mp3"
+    -->
+    
+    <!-- Background Music -->
+    <audio id="bgMusic" loop preload="auto">
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+    
+    <!-- Sound Effect for "Yes" button -->
+    <audio id="yesSound">
+        <source src="yippie.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+   
+    <!-- Image Lightbox -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox(event)">
+        <span class="lightbox-close">&times;</span>
+        <img id="lightbox-img" src="" alt="Memory">
+    </div>
+
+</body>
+</html>
